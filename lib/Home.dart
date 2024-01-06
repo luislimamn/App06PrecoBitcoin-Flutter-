@@ -66,6 +66,20 @@ class _HomeState extends State<Home> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+                  ElevatedButton(
+                    child: const Text(
+                      "Dolar",
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.orange
+                          //color: Colors.white
+                      ),
+                    ),
+                    //color: Colors.orange,
+                    //padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
+                    onPressed: _recuperarPrecoDolar,
+                  ),
+                  /*
                   RaisedButton(
                     child: Text(
                       "Dolar",
@@ -78,16 +92,17 @@ class _HomeState extends State<Home> {
                     padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
                     onPressed: _recuperarPrecoDolar,
                   ),
-                  RaisedButton(
-                    child: Text(
+                  */
+                  ElevatedButton(
+                    child: const Text(
                       "Real",
                       style: TextStyle(
                           fontSize: 20,
-                          color: Colors.white
+                          color: Colors.orange
                       ),
                     ),
-                    color: Colors.orange,
-                    padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
+                    //color: Colors.orange,
+                    //padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
                     onPressed: _recuperarPrecoReal,
                   )
                 ],
