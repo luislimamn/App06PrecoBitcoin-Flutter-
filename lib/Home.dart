@@ -67,12 +67,15 @@ class _HomeState extends State<Home> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   ElevatedButton(
+                    style: const ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(Colors.orange),
+                    ),
                     child: const Text(
                       "Dolar",
                       style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.orange
-                          //color: Colors.white
+                        fontSize: 20,
+                        color: Colors.white
+                        //color: Colors.white
                       ),
                     ),
                     //color: Colors.orange,
@@ -94,11 +97,14 @@ class _HomeState extends State<Home> {
                   ),
                   */
                   ElevatedButton(
+                    style: const ButtonStyle(
+                      backgroundColor: MaterialStatePropertyAll<Color>(Colors.orange),
+                    ),
                     child: const Text(
                       "Real",
                       style: TextStyle(
                           fontSize: 20,
-                          color: Colors.orange
+                          color: Colors.white
                       ),
                     ),
                     //color: Colors.orange,
